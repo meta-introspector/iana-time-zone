@@ -13,7 +13,7 @@ keywords = ["IANA", "time"]
 categories = ["date-and-time", "internationalization", "os"]
 readme = "README.md"
 edition = "2021"
-rust-version = "1.62.0"
+# rust-version = "1.62.0"
 
 [features]
 # When enabled, the library will succeed to compile for unknown target platforms, and return an `Err(GetTimezoneError::OsError)` at runtime.
@@ -50,6 +50,6 @@ chrono-tz = "0.10.1"
 # from `chrono`.
 getrandom = "0.2.1"
 
-[workspace]
-members = [".", "haiku"]
-default-members = ["."]
+#[workspace]
+#members = [".", "haiku"]
+#default-members = ["."]
